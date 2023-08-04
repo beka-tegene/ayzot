@@ -151,7 +151,7 @@ const Contact = () => {
               <Typography>ayzotdams@gmail.com </Typography>
             </Stack>
             <Divider
-              sx={{ width: "100%", height: ".2vh", backgroundColor: "gray" }}
+              sx={{ width: "80%", height: ".2vh", backgroundColor: "gray" , margin:"0 auto"}}
             />
             <Stack direction={"row"} gap={2}>
               <Icon>
