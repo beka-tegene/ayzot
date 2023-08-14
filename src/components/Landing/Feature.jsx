@@ -17,11 +17,12 @@ const Feature = () => {
       gap={7}
       alignItems={"center"}
       sx={{ padding: "3rem 6%" , backgroundColor:"#001F3F" }}
+      id={"feature"}
     >
       <Typography variant="h3" sx={{ color: "#FFD700", fontWeight: "500" }}>
         Key Features:
       </Typography>
-      <Stack direction={"row"} gap={7}>
+      <Stack direction={"row"} gap={7} flexWrap={"wrap"}  justifyContent={"center"}>
         <Card
           sx={{
             maxWidth: 345,

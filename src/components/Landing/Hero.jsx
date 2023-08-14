@@ -9,6 +9,8 @@ const Hero = () => {
       gap={2}
       sx={{ padding: "3rem 6%", backgroundColor: "#001F3F90" , position:"relative"}}
       alignItems={"center"}
+      flexWrap={"wrap"}
+      id={"home"}
     >
       <Box sx={{position:"absolute" ,width:"30rem" ,backgroundColor:"#00000050", padding:"4rem",left:"35%",zIndex:3 , backdropFilter:"blur(5px)"}}>
         <Typography variant="h3" sx={{fontWeight:"600",color:"#FFFFFFC0"}}>Coming soon!!</Typography>

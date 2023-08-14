@@ -21,6 +21,7 @@ const Service = () => {
       direction={"column"}
       gap={7}
       alignItems={"center"}
+      id={"service"}
     >
       <Typography variant="h3" sx={{ color: "#FFD700", fontWeight: "500" }}>
         Service

@@ -9,6 +9,8 @@ const About = () => {
       gap={2}
       sx={{ padding: "3rem 6%", backgroundColor: "#001F3F" }}
       alignItems={"center"}
+      flexWrap={"wrap"}
+      id={"about"}
     >
       <Stack
         flex={"1 1 40%"}
@@ -16,7 +18,7 @@ const About = () => {
         gap={2}
         alignItems={"flex-end"}
       >
-        <ImageListItem>
+        <ImageListItem sx={{width:445}}>
           <img
             src={`${logo}?w=164&h=164&fit=crop&auto=format`}
             alt="Hero image"

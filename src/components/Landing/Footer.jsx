@@ -1,7 +1,15 @@
 import { Send } from "@mui/icons-material";
-import {  IconButton, ImageListItem, InputBase, Paper, Stack, Typography } from "@mui/material";
+import {
+  IconButton,
+  ImageListItem,
+  InputBase,
+  Paper,
+  Stack,
+  Typography,
+} from "@mui/material";
 import React from "react";
 import logo from "../../Image/Ayzot1.png";
+import { HashLink } from "react-router-hash-link";
 
 const Footer = () => {
   return (
@@ -15,6 +23,7 @@ const Footer = () => {
         direction={"row"}
         justifyContent={"space-between"}
         sx={{ width: "100%" }}
+        flexWrap={"wrap"}
       >
         <Stack direction={"row"}>
           <ImageListItem sx={{ width: "250px" }}>
@@ -31,21 +40,11 @@ const Footer = () => {
             gap={1}
             sx={{ width: "70%", margin: "0 auto" }}
           >
-            <Typography variant="subtitle2" sx={{ color: "gray" }}>
-              Home
-            </Typography>
-            <Typography variant="subtitle2" sx={{ color: "gray" }}>
-              Feature
-            </Typography>
-            <Typography variant="subtitle2" sx={{ color: "gray" }}>
-              About us
-            </Typography>
-            <Typography variant="subtitle2" sx={{ color: "gray" }}>
-              Service
-            </Typography>
-            <Typography variant="subtitle2" sx={{ color: "gray" }}>
-              Contact us
-            </Typography>
+            <HashLink to="#home">Home</HashLink>
+            <HashLink to="#feature">Feature</HashLink>
+            <HashLink to="#about">About us</HashLink>
+            <HashLink to="#service">Service</HashLink>
+            <HashLink to="#contact">Contact us</HashLink>
           </Stack>
         </Stack>
         <Stack>

@@ -18,6 +18,7 @@ const Contact = () => {
       direction={"column"}
       gap={7}
       alignItems={"center"}
+      id={"contact"}
     >
       <Typography variant="h3" sx={{ color: "#FFD700", fontWeight: "500" }}>
         Contact Us
@@ -27,6 +28,7 @@ const Contact = () => {
         alignItems={"stretch"}
         justifyContent={"center"}
         sx={{ width: "70%" }}
+        flexWrap={"wrap"}
       >
         <Box
           component={"form"}

@@ -1,10 +1,16 @@
-import { AppBar, ImageListItem, Link, Stack, Toolbar } from "@mui/material";
+import { AppBar, ImageListItem, Stack, Toolbar } from "@mui/material";
 import React from "react";
 import logo from "../../Image/Ayzot1.png";
+import { HashLink } from "react-router-hash-link";
 const Layout = () => {
   return (
     <AppBar
-      sx={{ backgroundColor: "#001F3F", position: "sticky", color: "white",padding:"0 5%" }}
+      sx={{
+        backgroundColor: "#001F3F",
+        position: "sticky",
+        color: "white",
+        padding: "0 5%",
+      }}
     >
       <Toolbar
         sx={{
@@ -25,30 +31,10 @@ const Layout = () => {
           direction={"row"}
           sx={{ display: "flex", alignItems: "center", gap: 2 }}
         >
-          <Link
-            to="/"
-            sx={{ textDecoration: "none", cursor: "pointer", fontSize: "16px",color:"#FFFFFF" }}
-          >
-            Home
-          </Link>
-          <Link
-            to="/"
-            sx={{ textDecoration: "none", cursor: "pointer", fontSize: "16px",color:"#FFFFFF"  }}
-          >
-            About Us
-          </Link>
-          <Link
-            to="/"
-            sx={{ textDecoration: "none", cursor: "pointer", fontSize: "16px",color:"#FFFFFF"  }}
-          >
-            Service
-          </Link>
-          <Link
-            to="/"
-            sx={{ textDecoration: "none", cursor: "pointer", fontSize: "16px",color:"#FFFFFF"  }}
-          >
-            Contact Us
-          </Link>
+          <HashLink to="#home">Home</HashLink>
+          <HashLink to="#about">About Us</HashLink>
+          <HashLink to="#service">Service</HashLink>
+          <HashLink to="#contact">Contact Us</HashLink>
         </Stack>
       </Toolbar>
     </AppBar>
