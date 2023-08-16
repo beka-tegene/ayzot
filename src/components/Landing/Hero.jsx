@@ -12,7 +12,7 @@ const Hero = () => {
       flexWrap={"wrap"}
       id={"home"}
     >
-      <Box sx={{position:"absolute" ,width:{lg:"30rem" , md:"20rem"} ,backgroundColor:"#00000050", padding:"4rem",left:{md:"2%" , lg:"35%"},zIndex:3 , backdropFilter:"blur(5px)"}}>
+      <Box sx={{position:"absolute" ,width:{sm:"30rem" , xs:"28rem"} ,backgroundColor:"#00000050", padding:"4rem",left:{xs:"4%" , sm:"20%",md:"35%"},zIndex:3 , backdropFilter:"blur(5px)"}}>
         <Typography variant="h3" sx={{fontWeight:"600",color:"#FFFFFFC0"}}>Coming soon!!</Typography>
       </Box>
       <Stack flex={"1 1 50%"} direction={"column"} gap={3}>

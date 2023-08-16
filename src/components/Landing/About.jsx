@@ -12,6 +12,7 @@ const About = () => {
       flexWrap={"wrap"}
       id={"about"}
     >
+      
       <Stack
         flex={"1 1 40%"}
         direction={"column"}
